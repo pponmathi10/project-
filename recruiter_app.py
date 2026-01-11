@@ -1,5 +1,5 @@
 import streamlit as st
-import PyPDF2
+
 
 st.set_page_config(page_title="Recruiter ATS Screening", layout="wide")
 
