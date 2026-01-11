@@ -110,7 +110,7 @@ else:
 
         resume_text = (
             
-            if resume_file.type == "application/pdf"
+    
             else resume_file.read().decode("utf-8").lower()
         )
 
