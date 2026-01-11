@@ -40,7 +40,7 @@ ROLE_SKILLS = {
 # 📄 PDF Reader
 # ==================================================
 def read_pdf(file):
-    reader = PyPDF2.PdfReader(file)
+    
     text = ""
     for page in reader.pages:
         if page.extract_text():
@@ -109,7 +109,7 @@ else:
             st.stop()
 
         resume_text = (
-            read_pdf(resume_file)
+            
             if resume_file.type == "application/pdf"
             else resume_file.read().decode("utf-8").lower()
         )
